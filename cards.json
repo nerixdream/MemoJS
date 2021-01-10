@@ -1,0 +1,50 @@
+[
+    {
+        "src": "./img/elefante.png",
+        "defaul": "./img/default.png"
+    },
+    {
+        "src": "./img/elefante.png",
+        "defaul": "./img/default.png"
+    },
+    {
+        "src": "./img/hipopotamo.png",
+        "defaul": "./img/default.png"
+    },
+    {
+        "src": "./img/hipopotamo.png",
+        "defaul": "./img/default.png"
+    },
+    {
+        "src": "./img/leon.png",
+        "defaul": "./img/default.png"
+    },
+    {
+        "src": "./img/leon.png",
+        "defaul": "./img/default.png"
+    },
+    {
+        "src": "./img/mapache.png",
+        "defaul": "./img/default.png"
+    },
+    {
+        "src": "./img/mapache.png",
+        "defaul": "./img/default.png"
+    },
+    {
+        "src": "./img/tigre.png",
+        "defaul": "./img/default.png"
+    },
+    {
+        "src": "./img/tigre.png",
+        "defaul": "./img/default.png"
+    },
+    {
+        "src": "./img/zorro.png",
+        "defaul": "./img/default.png"
+    },
+    {
+        "src": "./img/zorro.png",
+        "defaul": "./img/default.png"
+    }
+]

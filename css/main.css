@@ -1,0 +1,140 @@
+:root {
+	--color-black: #042e2e;
+	--gradientToBottom: linear-gradient(125deg, rgb(121, 202, 202), rgb(119, 162, 211));
+	--gradientToRight: linear-gradient(to right, rgb(121, 202, 202), rgb(119, 162, 211));
+	--font-primary: 'Quicksand', sans-serif;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+}
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	max-width: 100%;
+}
+
+body {
+	background: var(--gradientToRight);
+	font-family: var(--font-primary);
+	color: #ffffff;
+	min-height: 100vh;
+}
+
+.container {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+.title-head {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.5rem;
+	min-height: 10vh;
+}
+.curve {
+	background: var(--color-black);
+	min-height: 10vh;
+	border-top-left-radius: 12rem;
+	margin-bottom: -0.5rem;
+}
+
+.cards-wrapper {
+	background: var(--color-black);
+	min-height: calc(80vh + 0.5rem);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.cards-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(4, 1fr);
+	gap: 1rem;
+	width: 90%;
+}
+
+.card {
+	background-image: url('../img/default.png');
+	border-radius: 0.6rem;
+	overflow: hidden;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 8rem;
+	width: 8rem;
+}
+
+.card img {
+	display: none;
+}
+
+.boton {
+	color: #ffffff;
+	background: var(--gradientToRight);
+	border: none;
+	font-size: 1.6rem;
+	font-family: var(--font-primary);
+	padding: 1rem;
+	margin: 3rem 0;
+	border-radius: 0.6rem;
+	cursor: pointer;
+}
+
+.mensaje {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 70%;
+	transform: translate(-50%, -50%);
+	font-size: 2.5rem;
+	text-align: center;
+	background: rgba(4, 46, 46, 0.95);
+	padding: 4rem;
+	border-radius: 1rem;
+	box-shadow: 0px 1rem 1rem rgba(4, 46, 46, 0.2), 0 2rem 2rem rgba(4, 46, 46, 0.2);
+}
+
+.mensaje span {
+	font-size: 1.8rem;
+	color: rgb(121, 202, 202);
+}
+
+.acertada {
+	display: block;
+}
+
+@media screen and (min-width: 375px) {
+	body {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.container {
+		max-width: 32rem;
+		min-height: unset;
+		border: 5px solid var(--color-black);
+		border-radius: 1rem;
+		box-shadow: 0px 1rem 1rem rgba(4, 46, 46, 0.2), 0 2rem 2rem rgba(4, 46, 46, 0.2);
+	}
+	.cards-wrapper {
+		min-height: unset;
+	}
+
+	.cards-container {
+		padding: 2rem;
+		width: unset;
+	}
+}
